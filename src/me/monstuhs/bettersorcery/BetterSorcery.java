@@ -27,8 +27,8 @@ public class BetterSorcery extends JavaPlugin {
     
     @Override
     public void onEnable() {
-        _configManager      = new ConfigurationManager(this);
-        SpellManager       = new SpellManager(_configManager.getConfigFile());
+        _configManager       = new ConfigurationManager(this);
+        SpellManager         = new SpellManager(_configManager.getConfigFile());
     
         _pluginManager.registerEvents(new SpellCastListener(), this);
 
